@@ -12,6 +12,7 @@ Bricks is a quick POC how could reusable apps in GD infrastructure work.
 There is no installation. This is a POC not a library. If you want to play do
 
     git clone https://github.com/fluke777/bricks_usage.git 
+    bricks-usage
     bundle install
     ruby playground.rb
 
