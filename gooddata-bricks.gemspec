@@ -4,11 +4,11 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'gooddata/bricks/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "gooddata-bricks"
+  spec.name          = "gooddata-bricks-poc"
   spec.version       = Gooddata::Bricks::VERSION
   spec.authors       = ["Tomas Svarovsky"]
   spec.email         = ["svarovsky.tomas@gmail.com"]
-  spec.description   = %q{Simple example how the brick might look like}
+  spec.description   = %q{Simple example how the brick might look like. It is just a POC}
   spec.summary       = %q{This is a brief summary}
   spec.homepage      = ""
   spec.license       = "MIT"
