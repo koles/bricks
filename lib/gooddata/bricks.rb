@@ -12,9 +12,8 @@ require 'gooddata'
 require 'logger'
 
 require "gooddata/bricks/brick"
+require 'pathname'
 
 
-FileUtils::cd "lib" do
-  Dir.glob('gooddata/bricks/user/*.rb').each {|p| require p}
-  Dir.glob('gooddata/bricks/middleware/*.rb').each {|p| require p}
-end
+Gem.find_files("gooddata/bricks/middleware/*.rb").each { |path| require path }
+Gem.find_files("gooddata/bricks/user/*.rb").each { |path| require path }

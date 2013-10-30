@@ -1,6 +1,12 @@
 module Gooddata
   module Bricks
 
+    class Pipeline
+      def self.prepare(pipeline)
+        pipeline.reverse.reduce(nil) {|memo, app| memo.nil? ? app.new : app.new(memo)}
+      end
+    end
+
     class Middleware
       def initialize(app)
         @app = app
