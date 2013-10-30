@@ -9,12 +9,11 @@ Bricks is a quick POC how could reusable apps in GD infrastructure work.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+There is no installation. This is a POC not a library. If you want to play do
 
-    git clone 
-    gem 'gooddata-bricks'
-    rake build
-    gem install pkg
+    git clone https://github.com/fluke777/bricks_usage.git 
+    bundle install
+    ruby playground.rb
 
 ## Usage
 
@@ -23,7 +22,6 @@ Let's say we have Bricks. These are reusable pieces of code for example for sync
 let's have a look at a simple example
 
 ```ruby
-include Gooddata::Bricks
 app = Pipeline.prepare([HelloWorldBrick])
 app.call({:who => "tomas"})
 ```
